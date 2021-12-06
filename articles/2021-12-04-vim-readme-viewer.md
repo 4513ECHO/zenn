@@ -3,8 +3,12 @@ title: "インストールしたプラグインのREADME.mdをお手軽に見れ
 emoji: "📖"
 type: "tech"
 topics: ["vim", "neovim"]
-published: false
+published: true
 ---
+
+:::message
+この記事は[Vim Advent Calendar 2021](https://qiita.com/advent-calendar/2021/vim)カレンダー2の7日目の記事です。
+:::
 
 ## 作った動機
 
@@ -22,7 +26,7 @@ published: false
 そんなときは、README.mdを見にいきます。helpがなくてもそれを見れば多くの場合解決します。
 ですが、困っているときにいちいちGitHubを開くのは正直面倒です。そこで、こんなプラグインを作ってみました。
 
-https://github.com/4513ECHO/vim-readme-viewer
+@[card](https://github.com/4513ECHO/vim-readme-viewer)
 
 ## 使い方
 
