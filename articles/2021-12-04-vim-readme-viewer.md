@@ -20,7 +20,7 @@ published: false
 しかし、中にはhelpがないプラグインも存在します。
 特に新しめのneovimのプラグインや、colorscheme系のプラグインにはhelpが用意されていないことが多い印象です。
 そんなときは、README.mdを見にいきます。helpがなくてもそれを見れば多くの場合解決します。
-ですが、困ってしるときにいちいちGitHubを開くのは正直面倒です。そこで、こんなプラグインを作ってみました。
+ですが、困っているときにいちいちGitHubを開くのは正直面倒です。そこで、こんなプラグインを作ってみました。
 
 https://github.com/4513ECHO/vim-readme-viewer
 
@@ -45,7 +45,7 @@ let g:readme_viewer#plugin_manager = 'dein.vim'
 
 vimを起動し、おもむろに`:DeinReadme vim-readme-viewer`と実行します。
 
-![doing :DeinReadme]()
+![doing :DeinReadme](/images/vim-readme-viewer-1.gif)
 
 これで簡単にREADME.mdを見ることができました🎉
 
