@@ -3,7 +3,7 @@ title: "vimでファイルを開いたときにカーソルを戻す+α"
 emoji: "🥌"
 type: "tech"
 topics: ["vim", "neovim"]
-published: false
+published: true
 ---
 
 :::message
