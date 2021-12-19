@@ -7,7 +7,7 @@ published: true
 ---
 
 :::message
-この記事は[Vim Advent Calendar 2021](https://qiita.com/advent-calendar/2021/vim)カレンダー2の20日目の記事です。
+この記事は[Vim Advent Calendar 2021](https://qiita.com/advent-calendar/2021/vim)カレンダー2の19日目の記事です。
 :::
 
 ## 初めに
