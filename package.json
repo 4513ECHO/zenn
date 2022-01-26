@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hibiki",
   "license": "MIT",
   "dependencies": {
     "textlint": "^12.1.0",
