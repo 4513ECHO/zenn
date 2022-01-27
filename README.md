@@ -1,24 +1,27 @@
-# Zenn CLI
+# zenn
 
-* [📘 How to use](https://zenn.dev/zenn/articles/zenn-cli-guide)
+📝 My [zenn.dev](https://zenn.dev/4513echo) contents
+
+- [📘 How to use](https://zenn.dev/zenn/articles/zenn-cli-guide)
+
 
 ## Usage
 
 1. Install Deps
 
 ```sh
-npm ci
+make init
 ```
 
 2. Create New Article
 
 ```sh
-npx zenn new:article --slug SLUG
+make article SLUG=some-article
 ```
 
 3. Preview Article
 
 ```sh
-npx zenn preview --port 8888
+make preview
 ```
 
