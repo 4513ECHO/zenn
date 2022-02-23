@@ -1,0 +1,23 @@
+# from https://zenn.dev/kyoh86/articles/c02511740d70365a1420
+---
+name: Auto Publish Articles
+on:
+  schedule:
+    - cron: '1 * * * *'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v2
+      - name: Publish articles
+        id: publish
+        uses: kyoh86/zenn-auto-publish-action@v0.0.4
+      - name: Push posts
+        if: steps.publish.outputs.published == 'true'
+        run: |
+          git config user.email "${{ github.event_name }}@${{github.repository_owner}}"
+          git config user.name "${{ github.event_name }}"
+          git commit -am 'Publish'
+          git push
