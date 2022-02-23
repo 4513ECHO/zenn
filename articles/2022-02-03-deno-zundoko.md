@@ -3,7 +3,7 @@ title: "ズンドコキヨシ with deno"
 emoji: "🦕"
 type: "idea"
 topics: ["deno", "ズンドコキヨシ"]
-publishAt: 2022-02-24
+publishAt: "2022-02-24"
 published: false
 ---
 
