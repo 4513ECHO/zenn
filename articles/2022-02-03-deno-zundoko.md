@@ -1,10 +1,11 @@
 ---
-title: "ズンドコキヨシ with deno"
-emoji: "🦕"
-type: "idea"
-topics: ["deno", "ズンドコキヨシ"]
-publishAt: "2022-02-24"
-published: false
+title: ズンドコキヨシ with deno
+emoji: "\U0001F995"
+type: idea
+topics:
+  - deno
+  - ズンドコキヨシ
+published: true
 ---
 
 https://twitter.com/kumiromilk/status/707437861881180160
