@@ -1,10 +1,11 @@
 ---
-title: "zshのautoloadで存在を調べる"
-emoji: "🐚"
-type: "tech"
-topics: ["zsh", "shell"]
-publishAt: "2022-02-27"
-published: false
+title: zshのautoloadで存在を調べる
+emoji: "\U0001F41A"
+type: tech
+topics:
+  - zsh
+  - shell
+published: true
 ---
 
 zshでautoloadの存在判定でつまずいたのでメモです。
