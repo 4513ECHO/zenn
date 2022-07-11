@@ -1,26 +1,36 @@
-ROOT := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 TZ := Asia/Tokyo
-SLUG := some-article
 PORT := 8888
 
 .DEFAULT_GOAL := help
-.PHONY := help init update article preview
 
-all:
+.PHONY := help
+help: ## Show targets in this Makefile
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
+	  | sort \
+	  | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
-help:  ## show this message and exit
-	@cat $(lastword $(MAKEFILE_LIST)) | awk '/^[A-Za-z]+:\s*##/ {print}'
-
-init:  ## initalize dependally packages
+.PHONY := init
+init: ## Initalize dependencies packages
 	npm ci
 
-update:  ## update dependally packages
+.PHONY := update
+update: ## Update dependencies packages
 	npm update
 
-article:  ## make new article
-	npx zenn new:article --slug "$(shell date +%Y-%2m-%2d)-$(SLUG)"
-	$(EDITOR) "$(ROOT)/articles/$(shell date +%Y-%2m-%2d)-$(SLUG).md"
+.PHONY := article
+article: ## Create new article
+	@SLUG=$(shell echo $$(read -p 'What is slug? : ' tmp ; echo $$tmp | sed -r "s/ +/-/g")) \
+		&& npx zenn new:article --slug "$(shell date +%Y-%2m-%2d)-$$SLUG"
 
-preview:  ## preview articles
+.PHONY := preview
+preview: ## Preview articles and books
 	npx zenn preview --port $(PORT)
 
+.PHONY := lint
+lint: ## Lint markdown files
+	npx textlint articles/*.md books/*.md
+
+.PHONY := list
+list: ## List related articles and books
+	@npx zenn list:articles
+	@npx zenn list:books
