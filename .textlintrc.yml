@@ -1,0 +1,16 @@
+filters: {}
+rules:
+  preset-ja-technical-writing:
+    ja-no-mixed-period:
+      allowPeriodMarks:
+        - ':'
+    no-exclamation-question-mark: false
+    # no-doubled-joshi:
+    #   strict: false
+    #   allow:
+    #     - 'か'
+  preset-jtf-style: true
+  prh:
+    rulePaths:
+      - 'node_modules/prh/prh-rules/media/WEB+DB_PRESS.yml'
+      - 'node_modules/prh/prh-rules/media/techbooster.yml'
