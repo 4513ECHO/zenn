@@ -1,10 +1,8 @@
 ---
-title: zshのautoloadで存在を調べる
-emoji: "\U0001F41A"
-type: tech
-topics:
-  - zsh
-  - shell
+title: "zshのautoloadで存在を調べる"
+emoji: "🐚"
+type: "tech"
+topics: ["zsh", "shell"]
 published: true
 ---
 

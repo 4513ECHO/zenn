@@ -1,10 +1,8 @@
 ---
-title: ズンドコキヨシ with deno
-emoji: "\U0001F995"
-type: idea
-topics:
-  - deno
-  - ズンドコキヨシ
+title: "ズンドコキヨシ with deno"
+emoji: "🦕"
+type: "idea"
+topics: ["deno", "ズンドコキヨシ"]
 published: true
 ---
 
