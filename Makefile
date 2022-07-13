@@ -28,7 +28,7 @@ preview: ## Preview articles and books
 
 .PHONY := lint
 lint: ## Lint markdown files
-	npx textlint articles/*.md books/*.md
+	npx textlint --cache articles/*.md books/*.md
 
 .PHONY := list
 list: ## List related articles and books
